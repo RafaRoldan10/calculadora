@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('assets/1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    
+  }
+  
+  .principal {
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .resultado{
+    height: 100px;
+    background-color: rgb(205, 205, 13);
+    color: red;
+    font-size: 30px;
+    align-items: center;
+  }
+
+  .btn{
+    background-color: black;
+    color: aqua;
+    border-radius: 50px;
+    font-size: 20px;
+    padding-left:30px ;
+    padding-right: 30px;
+    margin-top: 20px;
+  }
+
+  .btn:hover{
+    color:rgb(181, 23, 141)
+  }
+
+  #equals{
+    height: 200px;
+  }
