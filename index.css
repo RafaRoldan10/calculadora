@@ -1,46 +1,77 @@
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url('assets/1.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: 0;
-    height: 100vh;
-    
-  }
-  
-  .principal {
-    border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 400px;
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-  }
-  
-  .resultado{
-    height: 100px;
-    background-color: rgb(205, 205, 13);
-    color: red;
-    font-size: 30px;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('assets/1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  height: 100vh;
+}
+
+.principal {
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  max-width: 400px; /* Mantener el tamaño similar al diseño original */
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.resultado {
+  height: 100px;
+  background-color: rgb(205, 205, 13);
+  color: red;
+  font-size: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background-color: black;
+  color: aqua;
+  border-radius: 50px;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.btn:hover {
+  color: rgb(181, 23, 141);
+}
+
+#equals {
+  height: 150px;
+  width: 100%;
+}
+
+/* Ajustar columnas en dispositivos pequeños */
+@media (max-width: 576px) {
+  .row.g-2 > .col-sm-3 {
+    flex: 1 1 24%; /* Asegurar que las columnas ocupen 25% del ancho */
+    max-width: 24%; /* Mantener proporciones horizontales */
   }
 
-  .btn{
-    background-color: black;
-    color: aqua;
-    border-radius: 50px;
-    font-size: 20px;
-    padding-left:30px ;
-    padding-right: 30px;
-    margin-top: 20px;
+  .row > .col-sm-4 {
+    flex: 1 1 32%; /* Asegurar que las columnas de números ocupen 33% del ancho */
+    max-width: 32%;
   }
 
-  .btn:hover{
-    color:rgb(181, 23, 141)
+  .col-sm-8 {
+    flex: 1 1 66%; /* Botón '0' ocupa dos tercios */
+    max-width: 66%;
   }
 
-  #equals{
-    height: 200px;
+  .col-sm-4 {
+    flex: 1 1 33%; /* Botón Clear ocupa un tercio */
+    max-width: 33%;
   }
+
+  #equals {
+    height: 150px;
+    width: 100%;
+  }
+}
